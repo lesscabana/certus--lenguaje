@@ -1,0 +1,37 @@
+*{
+    background-color: rgb(151, 226, 226);
+}
+h1,h2{
+    display:flex;
+    justify-content: center;
+    font-size: 120px;
+}
+p{
+    color: rgb(19, 19, 77);
+    font-size: 20px;
+    background-color: antiquewhite;
+}
+#boss{
+    color: rgb(0, 77, 77);
+}
+.presentacion{
+    color:bisque;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 20px;
+    background-color: aliceblue;
+}
+div{
+    border: solid black;
+    width: 600px;
+    height: 600px;
+    font-size: 200px;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 25%;
+}
+section{
+    border: solid white;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
