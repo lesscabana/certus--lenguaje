@@ -1,0 +1,100 @@
+*{
+    border: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+.main-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 60px 1fl;
+    grid-gap: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+
+    grid-template-areas:
+    "C1 C1 C1 C1"
+    "C2 C3 C4 C5"
+    "C2 C6 C6 C7"
+    "C2 C6 C6 C8";
+}
+.main-container div:nth-child(1){
+    border: solid black;
+    color: black;
+    /*grid-column-start: 1;
+    grid-column-end: 5;*/
+    grid-area: C1;
+}
+.main-container div:nth-child(2){
+    border: solid rgb(141, 141, 141);
+    color: aqua;
+    /*grid-column:1/2;
+    grid-row:2/5;*/
+    grid-area: C2;
+}
+.main-container div:nth-child(3){
+    border: solid rgb(100, 90, 241);
+    color: blue;
+    /*grid-column:2/3;
+    grid-row:2/3;*/
+    grid-area: C3;
+}
+
+.main-container div:nth-child(4){
+    border: solid rgb(87, 243, 217);
+    color: aqua;
+    /*grid-column:3/4;
+    grid-row:2/3;*/
+    grid-area: C4;
+}
+.main-container div:nth-child(5){
+    border: solid rgb(235, 117, 117);
+    color: brown;
+    /*grid-column:4/5;
+    grid-row:2/3;*/
+    grid-area: C5;
+}
+.main-container div:nth-child(6){
+    border: solid rgb(153, 243, 165);
+    color: rgb(31, 75, 44);
+    /*grid-column:2/4;
+    grid-row:3/5;*/
+    grid-area: C6;
+}
+.main-container div:nth-child(7){
+    border: solid rgb(173, 185, 140);
+    color: rgb(30, 66, 28);
+    /*grid-column:4/5;
+    grid-row:3/4;*/
+    grid-area: C7;
+}
+.main-container div:nth-child(8){
+    border: solid rgb(255, 165, 243);
+    color: rgb(89, 35, 102);
+    /*grid-column:4/5;
+    grid-row:4/5;*/
+    grid-area: C8;
+}
+@media(max-width:768px){
+    .main-container{
+        background-color: bisque;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8,200px);
+        grid-template-areas: initial;
+    }
+    .main-container div{
+        grid-area: initial !important;
+    }
+}
+@media(max-width:400px){
+    .main-container{
+        background-color: aquamarine;
+        grid-template-columns: 2fr;
+        grid-template-rows: repeat(8,2000px);
+        grid-template-areas: initial;
+    }
+    .main-container div{
+        grid-area: initial !important;
+    }
+}
