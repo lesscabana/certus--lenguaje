@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Space tourism website</title>
+  <link href="NavStyles.css" rel="stylesheet" type="text/css" />
+  <link href="technology.css" rel="stylesheet" type="text/css" />
+  <script defer src="technology.js"> </script>
+  <script defer src="navbar.js"></script>
+</head>
+
+<body>
+    <main class="bg-[url('./assets/technology/background-technology-mobile.jpg')] h.screen bg-cover p-6 md:bg-[url('./assets/destination/background-technology-desktop.jpg')]">
+        <nav class="flex justify-between items-center">
+            <img src="./assets/shared/logo.svg">
+            <img class="md:hidden" src="./assets/shared/icon-hamburger.svg">
+<div class=" md:flex text-white md:py-5 pl-5 pr-20 backdrop-blur-xl"></div>
+    <ul class="mobile-links" style="display: ;" class="flex gap-5">
+        <li href="./sm.html">00 HOME</li>
+        <li href="./MARSBG.html">01 DESTINATION</li>
+        <li href="./anousheh.html">02 CREW</li>
+        <li href="./technology.html">03 TECHNOLOGY</li>
+    </ul>
+</div>
+
+<h><span>03</span> SPACE LAUNCH 101</h>
+
+<section class="section">
+
+  <div class="content">
+        <div class="number-index">
+          <span class="index" onclick="contentOne()">1</span>
+          <span class="index" onclick="contentTwo()">2</span>
+          <span class="index" onclick="contentThree()">3</span>
+        </div>
+        <div class="info">
+          <p class="firstInfo">The terminology...</p>
+            <h1 class="title text-8xl text-principal mt-4" id="vehicleTitle">Launch vehicle</h1>
+            <P class="secondInfo mt-12" id="technologyDesc">A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
+            payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
+            WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
+            it's quite an awe-inspiring sight on the launch pad!</P>
+        </div>
+  </div>
+  <div class="imageContainer" id="image">
+  <div id="rocketImage"></div>
+  </div>
+
+</section>
+</main>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./technology.js"></script>
+</body>
+</html>
